@@ -1,0 +1,99 @@
+body{
+  background-color:#f2f2f2;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+p{
+	font-size:20px;
+	font-family:Helvetica, Helvetica Neue, Arial;
+}
+
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+	size:10;
+}
+
+.bar { fill: #009900;
+		width: 30px;
+ }
+/*Graph1*/
+#graph1Container{
+}
+
+#graph1{
+	position: center;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+/*Graph2*/
+#southernGraph{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#richmondGraph{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.center{
+	text-align:center;
+	border:3px solid black;
+
+}
+
+/*Graph 3*/
+#graph3{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Legend for bar graph for graph2*/
+
+.legend{
+  font-size:14px;
+}
+
+rect{
+  stroke-width:2;
+}
+
+/*tooltip for Graph2*/
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 12px;
+  left: 130px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 100px;
+  z-index: 10;
+  border-radius: 25px;
+}
+
+
+/* Line for Graph 3*/
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.tooltipGraph3 { 
+    position: absolute;     
+    text-align: center;     
+    width: 60px;          
+    height: 28px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}

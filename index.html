@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href = "mystyle.css">
+		<meta charset="utf-8" />
+    	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Project 1</title>
+		<script src = "d3.min.js"></script>
+		<script src = "jQuery.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<h1 class = "center">Project 1 - San Francisco Police Department Report</h1>
+		</div>
+		<div>
+			<h2>Summary</h2>
+			<p>The data that I will be visualizing is the SFPD 2016 Incident report data. The data was taken from <a href="https://data.sfgov.org/Public-Safety/SFPD-Incidents-Current-Year-2016-/9v2m-8wqu/data">here</a>.  As a native of San Francisco I am interested about the distribution of crime throughout the city. Looking at this data I can gave myself a certain amount of context because not only do I live in one of these district, I'm also familiar with many of the others. The first question that I am most interested in is the different crime rates of districts. </p>
+		</div>
+		<hr class= "style1">
+		<div id = "graph1Container" class = "center">
+			<h2>Graph 1: Crime Rates in Different Districts</h2> 
+			<p style="font-size: 25px;">How much does crime rate vary in the different police districts of San Francisco?</p>
+			<div id = "graph1"></div>
+
+		</div>
+
+		<div>
+			<p>From the bar graph generated about we can see that the distribution in crime rates is very different among the different districts. There is a definite higher amount of crime rate in the Southern district, compared to districts like Richmond and Park.</p>	
+			<p>I was interested in asking this question because as a native resident of San Francisco I have always been aware of the crime problem that plagued the city. I live in between the Bayview and Mission district and always though that crime rates in my area would be high and areas like Tenderloin, which has a bad reputation, would have even higher crime rates. I chose to use a bar graph to represent this data because it would be easy to compare the length of the different bars for different districts to gauge the different crime rates in each district. After creating this visualization, it has given me insights on the dataset. My initial assumption that my district or Tenderloin had the highest crime rate was wrong. It is the Southern district that has the highest crime rate. However, we should not be too quick to judge each district. Crime can be categorized into many different types. In my second graph, I seek to explore the difference in types of crime in a high crime rate area like the Southern Area, and a lower crime rate area like Richmond. </p>
+		</div>
+		<hr class= "style1">
+
+		<div id = "graph2Container" class="center">
+			<h2>Graph 2: Distribution of Different Types of Crime</h2>
+			<p>What is the difference in crime types in hight crime rate areas like Southern, comapred to lower crime rate areas like Richmond?</p>
+			<h2> Pie Chart for Crime Type Distribution in the Southern District</h2>
+			<div id = "southernGraph"></div>
+			<h2> Pie Chart for Crime Type Distribution in the Richmond District</h2>
+			<div id = "richmondGraph"></div>
+
+		</div>
+
+		<p>In the two pie charts, we can observe the distribution of crime types in two different districts of San Francisco. Just from taking a first look we can tell that the distribution of crime types is similar in Richmond District and Southern District. The total crime rate does not affect the distribution of different types of crime in a district.</p>
+
+		<p>My interest for this question sparked when I saw such a big difference in crime rates between Richmond and Southern District. I wanted to know if the types of crime would follow a similar or different distribution. Initially I expected the Southern District to have higher a much higher crime ratio of more serious crimes like, assault, drugs/narcotics, and weapons. However, after performing this visualization, the difference in ratio of these crimes was no more than 5%. Despite the small differences in crime type ratio, it would be good to point out from our Graph 1, that crime rates in Southern District is much higher than that of Richmond. Even though for crimes like drugs/narcotics only have a 2.5% difference between Richmond and Southern District, the numbers scale much more differently for each district. The number of drug/narcotic related criminal activities is 923, compared to Richmond at 76. That is over 12 times the number of cases. I want to remind people these two pie charts can only be used to compare the ratio of crime type distribution and not the actual numbers.</p>
+
+		<p>I chose to use a pie chart for Graph 2 because it allowed for better representation of the distribution of different types of crime. Having two pie charts would allow for easy comparison between the two districts. Seeing that crime continues to be a major problem in San Francisco, my third graph I will create a representation of the time of day that most criminal activity occurs.</p>
+		
+
+		<hr class= "style1">
+
+		<div id = "graph3Container" class="center">
+			<h2>Graph 3: Average Crime Rates for Each Hour of the Day</h2>
+			<p>What Time of the Day is When Crime Rate is the Highest?</p>
+			<h2>Crime Rate Vs Time</h2>
+			<div id = "graph3"></div>
+		</div>
+		<p>In the line graph we observe that crime rate through the day does follow a trend. Crime tends to drop dramatically after midnight, and would slowly climb back up at 5am. We then see a sharp increase in crime rate from 11am to 12pm. The highet rate of crime occurs at 6pm, and after slowly drops until the next day morning.</p>
+
+		<p>My interest for this question came from wanting to understand when would be the safest time for activities in the city. I removed all the crime reports that were under the non-criminal category, to gather data of only actual crime. Using a line graph was the best option for this graph, because we can observe the change in crime rate with time. From looking at the line graph, it was expected that crime would be low from midnight to the early morning, and would be increasing throughout the day. The sharp increase of crime from 11am to noon did surprise me. The most shocking part of this data was that crime rate peaked at 6pm. Originally I had expected crime to be highest from 7pm - 10pm, since that is when it is dark, but people are still awake. Looking back at my line graph there might be some correlation with the high crime rates and the time that crime rates spike. 12pm may have a crime rate spike because people get off for lunch or have a half work day. At 6pm most people are getting off from work. It seems that times when the city has the most active people crime rate is the highest. There might be a correlation between the number of active people and crime rate.</p>
+		<hr class="style1">
+		<h2>Conclusion</h2>
+		<p>From my visualizations, I have found that different districts have a huge disproportion in crime rate. The reason could be due to the affluence of people living there or due to many other factors. No single generilization of a district can be made form just looking at the number of crimes. In graph2 the pie charts show that the ratio of different crimes is actually fairly similar in high crime rate areas and low crime rate areas. However, we cannot over look that the number of these different crimes happen in a much higher amount in high crime rate areas. Finally, from our 3rd graph we found that the most dangerous times in San Francisco is at 12pm and 6pm. During these times there might be a high congestion of people in the city. Crime continues to be a problem in San Francisco. With more further studies into other datasets about the city we might be able to find more correlation between crime and other factors.</p>
+		
+
+	</body>
+
+	<script type="text/javascript" src = "script.js"></script>
+
+</html>
+
+
+
